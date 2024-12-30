@@ -1,0 +1,11 @@
+.box{
+    height: 100px;
+    width: 200px;
+    color:red;
+    background-color: aquamarine;
+    /* float:right; */
+    
+    margin:5px; 
+    padding:10px 3px 4px 5px;
+
+}
