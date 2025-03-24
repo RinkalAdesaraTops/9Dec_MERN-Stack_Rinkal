@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class abc{ //parent base super class
+            constructor(){
+                console.log("abc constructor called..");              
+            }
+            test(){
+                console.log("parent--test func called..");                
+            }
+
+        }
+        class xyz extends abc{ //child derived sub class 
+            constructor(){
+                super()
+                console.log("xyz constructor called..");                
+            }
+            test(){
+                super.test()
+                console.log("child--test func called..");                
+            }
+        }
+        let obj = new xyz()
+        obj.test()
+        // obj.test1()
+    </script>
+</body>
+</html>

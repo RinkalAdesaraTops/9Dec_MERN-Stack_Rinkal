@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [22,11,33,44,55,50,89,90,100,45,26]
+        let new_arr = arr.slice(3,8)
+        document.write('<br> '+arr)
+        document.write('<br> '+new_arr)
+        new_arr = arr.slice(-5)
+        document.write('<br> '+new_arr)
+        new_arr = arr.slice(-5,-2)
+        document.write('<br> '+new_arr)
+
+        // let str = ["xyz","hjk","jkl","abc","bat","cat"]
+        let str = [78,8,90,1,55,23,34,55,87,64,200,600]
+        //compare function
+        // document.write('<br> Asc sort is --- '+str.sort(function(a,b){
+        //     return b-a //a=78 b=8 78-8=70 90-1=89 23-34=-14
+        // }))
+        document.write('<br> Asc sort is --- '+str.sort((a,b)=>{
+            return a-b
+        }))
+        document.write('<br> Asc sort is -- '+str.reverse())
+        let srh = 2001
+        let ans = str.includes(srh) //always return boolean
+        if(ans){
+            document.write('<br> Data found..')
+        } else {
+            document.write('<br> No Data found..')
+
+        }
+    </script>
+</body>
+</html>

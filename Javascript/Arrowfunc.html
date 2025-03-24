@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const add = ()=>{
+            let a = 25
+            let b=35
+            document.write('<br> Addition is '+(a+b))
+        }
+        // const add = function(){
+        //     let a = 25
+        //     let b=35
+        //     document.write('<br> Addition is '+(a+b))
+        // }
+        // function add(){
+        //     let a = 25
+        //     let b=35
+        //     document.write('<br> Addition is '+(a+b))
+        // }
+        //2)Take something  return nothing
+        const minus = (a,b)=>{
+            document.write('<br> Minus is '+(a-b))
+        }
+        // function minus(a,b){
+        //     document.write('<br> Minus is '+(a-b))
+        // }
+        //3)take nothing return something
+        let a = 5
+        //fat arrow function
+        const mult = () => a**2
+        // const mult = ()=>{
+        //     return a**2
+        // }
+        // function mult(){
+        //     let a = 5
+        //     return a**2
+        // }
+        //4)Take something return something
+        const pi=3.14
+        let area = r=>pi*r**2
+        // function area(r){
+        //     const pi=3.14
+        //     return pi*r**2
+        // }
+        add()
+        minus(200,50)
+        document.write('<br> Multiplication is '+mult())
+        document.write('<br> Area of circle is '+area(100))
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "hi hello how are you?"
+        document.write('<br> Length is '+str.length)
+        document.write('<br> Uppercase is '+str.toUpperCase())
+        document.write('<br> Lowercase is '+str.toLowerCase())
+        let str2 = str.concat("hi123")
+        document.write('<br> '+str2)
+        let new_str = "  dfgdf dfgh dkfjhg dghkj   "
+        console.log(new_str);
+        console.log(new_str.trim());
+        document.write('<br> '+new_str.length)
+        document.write('<br> '+new_str.trim().length)
+        document.write('<br> '+new_str.trimStart().length)
+        document.write('<br> '+new_str.trimEnd().length)
+        document.write('<br> '+new_str.slice(5,8))
+        document.write('<br> '+new_str.substr(5,8))
+        let a = "123"
+        let b = a.padEnd(6,"RS") //RSR123
+        document.write('<br> '+b)
+        let pr = "Hi hello hi how are you ? hi Hi"
+        // let pr1 = pr.replace(/HI/ig,"TEST")
+        let pr1 = pr.replaceAll(/Hi/gi,"TEST")
+        //case sensitive at a time only one word replace
+        document.write('<br> '+pr)
+        document.write('<br> '+pr1)
+    </script>
+</body>
+</html>

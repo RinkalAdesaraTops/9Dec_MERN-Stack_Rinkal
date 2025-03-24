@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="username" id="username" value="abc">
+    <div class="abc">1Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel dolor.</div>
+    <div class="abc">2nemo vitae perferendis. Blanditiis eum sequi rem itaque quasi, ullam deleniti laboriosam iste possimus velit officia ad deserunt facere.</div>
+    <div class="abc">3nemo vitae perferendis. Blanditiis eum sequi rem itaque quasi, ullam deleniti laboriosam iste possimus velit officia ad deserunt facere.</div>
+    <div class="abc">4nemo vitae perferendis. Blanditiis eum sequi rem itaque quasi, ullam deleniti laboriosam iste possimus velit officia ad deserunt facere.</div>
+    <script>
+        let a = document.getElementsByName('username')
+        // console.log(a);
+        a[0].style.color = 'red'
+        //getElementsByTagName
+        let b = document.getElementsByClassName('abc')
+        for(let i=0;i<b.length;i++){
+            if((i+1)%2==0){
+                b[i].style.color = 'yellowgreen'
+            } else {
+                b[i].style.color = 'blue'
+            }
+        }
+        // querySelector("p.abc")
+        // querySelectorAll("p#demo")
+        let ab = document.querySelectorAll("div")
+        ab.style.color = 'brown'
+        console.log(ab);
+        
+    </script>
+</body>
+</html>

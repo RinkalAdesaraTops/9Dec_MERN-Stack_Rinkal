@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //pending
+        //fullfilled/completed
+        //incompleted/ rejected
+        let age = 10
+        let pr = new Promise((rs,rj)=>{
+            if(age>=18){
+                rs("Eligible 4 vote")
+            } else {
+                rj("Not eligible")
+            }
+            
+        }).then((i)=>console.log(i))
+        .catch((i)=>console.log("error found --"+i))
+
+//Exception handling - try_catch
+try{
+    //error generate
+    if(age>=18){
+        console.log("Eligible");     
+    } else {
+        throw "Not eligible..."
+    }
+}catch(e){
+    //solution
+    console.log("Catch block ---"+e);
+    
+}
+finally{
+   //always excuted code 
+}
+    </script>
+</body>
+</html>

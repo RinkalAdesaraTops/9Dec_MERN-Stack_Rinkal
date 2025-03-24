@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1)take Nothing return nothing
+        function add(){
+            let a = 25
+            let b=35
+            document.write('<br> Addition is '+(a+b))
+        }
+        //2)Take something  return nothing
+        function minus(a,b){
+            document.write('<br> Minus is '+(a-b))
+        }
+        //3)take nothing return something
+        function mult(){
+            let a = 5
+            return a**2
+        }
+        //4)Take something return something
+        function area(r){
+            const pi=3.14
+            return pi*r**2
+        }
+        add()
+        minus(200,50)
+        document.write('<br> Multiplication is '+mult())
+        document.write('<br> Area of circle is '+area(100))
+    </script>
+</body>
+</html>

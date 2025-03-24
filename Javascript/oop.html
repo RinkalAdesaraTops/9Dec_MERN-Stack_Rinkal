@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // class & object
+        // Data abstraction - data hiding & 
+        // Encapsulation = wrapping up of data into single unit
+        // Inheritance
+        // Polymorphism
+        class emp {
+            //default constructor
+            // constructor(){ //special member function 
+            //     console.log("constructor called...");              
+            //     this.a = 10
+            //     this.b = 20
+            // }
+            constructor(p,q){ //special member function 
+                console.log("constructor called...");              
+                this.a = p
+                this.b = q
+            }
+            add = ()=>{
+                console.log("Addition is "+(this.a+this.b)); 
+                this.minus()              
+            }
+            minus(){
+                console.log("Minus is "+(this.a - this.b));               
+            }
+        }
+        let obj = new emp(35,45)
+        obj.add()
+    </script>
+</body>
+</html>

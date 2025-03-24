@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let no = parseInt(prompt("Enter no:"))
+        //no = 672
+        let count = 0
+        let sum =0
+        let m=1
+        while(no>0){ //672>0  67>0 6>0 0>0
+            let r = no%10 //672%10=2 67%10=7 6%10=6
+            no = Math.floor(no/10) //672/10=67 67/10=6 6/10=0.6 = 0
+            count++ //1 2 3
+            // let cube = r*r*r
+            sum += r
+            m *=r
+        }
+        document.write('<br> Total no of digits are '+count)
+        document.write('<br> Sum of digits are '+sum)
+
+    </script>
+</body>
+</html>

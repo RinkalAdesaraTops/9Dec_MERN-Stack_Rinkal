@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let arr = ["abc","xyz","pqr","abc","xyz","abc"]
+        /*
+            abc:3,
+            xyz:2
+            pqr:1
+        */
+        let arr = [1,2,3,4,5,2]
+        let new_arr = arr.map((i,index)=>{
+            console.log(i);
+            console.log("index is "+index);     
+            return i*2      
+        })
+        document.write('<br> '+new_arr)
+        document.write('<br> '+arr)
+        //filter - searching & array return 
+        let srh = arr.filter((i)=>{
+                return (i==2) || (i==40)
+        })
+        console.log(srh);
+        if(srh.length > 0){
+            document.write('<br> data found...')
+        }else {
+            document.write('<br> No data found...')
+        }
+
+        /*
+        includes - always return boolean value
+        find - always return single value
+        filter - always return array
+        */
+       //[1,2,3,4,5]
+       let sum = arr.reduceRight((total,a)=>{
+        if(total>a){ //23,4
+            a = total
+        }
+        return a 
+            // console.log("total "+total);
+            // console.log("a "+a);
+            // return total+a
+            
+       })
+       document.write('<br> Sum is '+sum)
+       let arr1 = ["abc","xyz","pqr","abc","xyz","abc"]
+       let ans = arr1.reduce((a,b)=>{
+            if(!a[b]){
+                a[b]=1
+            } else {
+                a[b]++
+            }
+            return a
+       },{}) //{ abc:3,xyz:1,pqr:1}
+       console.log(ans);
+       
+    </script>
+</body>
+</html>
