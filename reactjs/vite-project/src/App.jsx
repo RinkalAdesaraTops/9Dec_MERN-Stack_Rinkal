@@ -7,6 +7,10 @@ import MaterialUIExample from './MaterialUIExample'
 import LifecycleClass from './LifecycleClass'
 import LifecycleFunc from './LifecycleFunc'
 import Crud from './Crud'
+import UserCRUD from './UserCRUD'
+import UseRefExample from './UseRefExample'
+import UseContextExample from './UseContextExample'
+import ContextExample from './ContextExample'
 
 function App() {
   return (
@@ -19,7 +23,11 @@ function App() {
         {/* <MaterialUIExample /> */}
         {/* <LifecycleClass /> */}
         {/* <LifecycleFunc /> */}
-        <Crud />
+        {/* <Crud /> */}
+        {/* <UserCRUD /> */}
+        {/* <UseRefExample /> */}
+        {/* <ContextExample /> */}
+        <UseContextExample />
       </div>
       
       {/* // </>
