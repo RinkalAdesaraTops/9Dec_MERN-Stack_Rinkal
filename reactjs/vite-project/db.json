@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "name": "Test",
+      "age": "25",
+      "id": 2
+    },
+    {
+      "name": "Abc",
+      "age": "22",
+      "id": 4
+    }
+  ],
+  "emp": [],
+  "category": [
+    {
+      "id": 1,
+      "catname": "Men"
+    }
+  ]
+}

@@ -11,6 +11,7 @@ import UserCRUD from './UserCRUD'
 import UseRefExample from './UseRefExample'
 import UseContextExample from './UseContextExample'
 import ContextExample from './ContextExample'
+import ApiExample from './ApiExample'
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
         {/* <UserCRUD /> */}
         {/* <UseRefExample /> */}
         {/* <ContextExample /> */}
-        <UseContextExample />
+        {/* <UseContextExample /> */}
+      <ApiExample/>
       </div>
       
       {/* // </>
