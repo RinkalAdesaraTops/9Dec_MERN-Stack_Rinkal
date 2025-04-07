@@ -12,6 +12,7 @@ import UseRefExample from './UseRefExample'
 import UseContextExample from './UseContextExample'
 import ContextExample from './ContextExample'
 import ApiExample from './ApiExample'
+import Customhook from './Customhook'
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
         {/* <UseRefExample /> */}
         {/* <ContextExample /> */}
         {/* <UseContextExample /> */}
-      <ApiExample/>
+      {/* <ApiExample/> */}
+      <Customhook />
       </div>
       
       {/* // </>
