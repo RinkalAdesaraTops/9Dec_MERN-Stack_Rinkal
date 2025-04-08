@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+// import './App.css'
 import BootstrapExample from './BootstrapExample'
 import MaterialUIExample from './MaterialUIExample'
 import LifecycleClass from './LifecycleClass'
@@ -13,6 +13,11 @@ import UseContextExample from './UseContextExample'
 import ContextExample from './ContextExample'
 import ApiExample from './ApiExample'
 import Customhook from './Customhook'
+import LazyComponent from './LazyComponent'
+import Menu from './Menu'
+import { BrowserRouter, Route, Routes } from 'react-router'
+import Home from './Home'
+import Contact from './Contact'
 
 function App() {
   return (
@@ -31,11 +36,20 @@ function App() {
         {/* <ContextExample /> */}
         {/* <UseContextExample /> */}
       {/* <ApiExample/> */}
-      <Customhook />
+      {/* <Customhook /> */}
       </div>
       
       {/* // </>
       </React.Fragment> */}
+      {/* <LazyComponent /> */}
+      <Menu />
+      <BrowserRouter>
+      <Routes>
+          <Route path='/home' element={<Home />}/>
+          <Route path='/crud' element={<Crud />}/>
+          <Route path='/contact' element={<Contact />}/>
+      </Routes>
+      </BrowserRouter>
       </Fragment>
   )
 }
