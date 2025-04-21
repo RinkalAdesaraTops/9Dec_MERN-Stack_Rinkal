@@ -42,14 +42,15 @@ function App() {
       {/* // </>
       </React.Fragment> */}
       {/* <LazyComponent /> */}
-      <Menu />
+      {/* <Menu />
       <BrowserRouter>
       <Routes>
           <Route path='/home' element={<Home />}/>
           <Route path='/crud' element={<Crud />}/>
           <Route path='/contact' element={<Contact />}/>
-      </Routes>
-      </BrowserRouter>
+      </Routes> */}
+      {/* </BrowserRouter> */}
+      <UserCRUD />
       </Fragment>
   )
 }
